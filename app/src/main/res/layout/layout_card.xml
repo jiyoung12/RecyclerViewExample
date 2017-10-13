@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/card_top"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/textview_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/d_day_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="12dp"
+                android:text="D-7"
+                android:textColor="@color/C_e76060"
+                android:textSize="13dp"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="37dp">
+
+            <util.SquareImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/imageview_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/confirm_like"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/custom_button_confirm_like"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textview_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/custom_round_644ead"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textview_user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/custom_round_292a3a"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textview_superlike"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/custom_round_2fc4dc"
+                android:drawablePadding="2.3dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="슈퍼좋아요"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:visibility="gone"/>
+
+
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/round_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/round_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
